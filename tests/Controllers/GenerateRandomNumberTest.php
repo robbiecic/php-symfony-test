@@ -10,6 +10,6 @@ class GenerateRandomNumberTest extends TestCase
     {
         $GenRandomObject = new GenerateRandomNumber();
         $result = $GenRandomObject->returnRandomInteger(0, 100);
-        $this->assertEquals(0, $result, 'Between 0 and 100', 100);
+        $this->assertEqualsWithDelta(0, $result, 100);
     }
 }

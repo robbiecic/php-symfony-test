@@ -18,7 +18,7 @@ class GenerateRandomNumber
         return $requestWrapper->returnJsonResponse($return_object);
     }
 
-    public function returnRandomInteger($min, $max): int
+    public function returnRandomInteger(int $min, int $max): int
     {
         return rand($min, $max);
     }

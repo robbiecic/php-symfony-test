@@ -27,7 +27,7 @@ class PersonController
     }
 
     /**
-    * @Route("/createPerson", methods=["POST"]
+    * @Route("/createPerson", methods={"POST"})
     */
     public function createPerson(): JsonResponse
     {
